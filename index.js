@@ -1,9 +1,7 @@
-import load from './srcs/load'
-import { getData } from './srcs/static/rank_solo'
+import save from './srcs/users/users'
 
 const main = () => {
-	const data = load('seolim.json');
-	getData(data);
+	save('./data/users.json', 2000, 3000)
 }
 
 main();
